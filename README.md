@@ -1,7 +1,7 @@
 ## cPanel/WHM API PHP
 Manage your WHM/cPanel server with this PHP library. Simple to use. With this PHP library, you can manage your cPanel/WHM server.
 
-[![License](https://img.shields.io/packagist/l/previewtechs/cpanel-whm-api.svg)](https://github.com/PreviewTechnologies/cpanel-whm-api/blob/master/LICENSE)
+[![License](https://img.shields.io/packagist/l/Daothanh/cpanel-whm-api.svg)](https://github.com/PreviewTechnologies/cpanel-whm-api/blob/master/LICENSE)
 [![Build Status](https://api.travis-ci.org/PreviewTechnologies/cpanel-whm-api.svg?branch=master)](https://travis-ci.org/PreviewTechnologies/cpanel-whm-api)
 [![Code Coverage](https://scrutinizer-ci.com/g/PreviewTechnologies/cpanel-whm-api/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/PreviewTechnologies/cpanel-whm-api/?branch=master)
 [![Code Quality](https://scrutinizer-ci.com/g/PreviewTechnologies/cpanel-whm-api/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/PreviewTechnologies/cpanel-whm-api/?branch=master)
@@ -12,7 +12,7 @@ Manage your WHM/cPanel server with this PHP library. Simple to use. With this PH
 You can install this library with composer.
 
 ```bash
-composer require previewtechs/cpanel-whm-api:dev-master
+composer require daothanh/cpanel-whm-api:dev-master
 ```
 
 ### Usage
@@ -21,8 +21,8 @@ composer require previewtechs/cpanel-whm-api:dev-master
 require "vendor/autoload.php";
 
 //Build WHM Client
-use PreviewTechs\cPanelWHM\WHM\Accounts;
-use PreviewTechs\cPanelWHM\WHMClient;
+use Daothanh\cPanelWHM\WHM\Accounts;
+use Daothanh\cPanelWHM\WHMClient;
 
 require "vendor/autoload.php";
 $whmClient = new WHMClient("WHM_USERNAME","API_TOKEN", "yourwhmserver.com", 2087);
@@ -46,7 +46,7 @@ Create API token from https://your-whm-server:2087/cpsessxxxxxx/scripts7/apitoke
 Learn more about WHM API Token from [https://documentation.cpanel.net/display/64Docs/Manage+API+Tokens](https://documentation.cpanel.net/display/64Docs/Manage+API+Tokens)
 ```php
 <?php
-use PreviewTechs\cPanelWHM\WHMClient;
+use Daothanh\cPanelWHM\WHMClient;
 $whmClient = new WHMClient("WHM_USERNAME","API_TOKEN", "yourwhmserver.com", 2087);
 ```
 

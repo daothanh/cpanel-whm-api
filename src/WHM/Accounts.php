@@ -1,20 +1,20 @@
 <?php
 
-namespace PreviewTechs\cPanelWHM\WHM;
+namespace Daothanh\cPanelWHM\WHM;
 
 use DateTime;
 use Http\Client\Exception;
-use PreviewTechs\cPanelWHM\Entity\Account;
-use PreviewTechs\cPanelWHM\Entity\Domain;
-use PreviewTechs\cPanelWHM\Entity\DomainUser;
-use PreviewTechs\cPanelWHM\Entity\SuspendedAccount;
-use PreviewTechs\cPanelWHM\Exceptions\ClientExceptions;
-use PreviewTechs\cPanelWHM\WHMClient;
+use Daothanh\cPanelWHM\Entity\Account;
+use Daothanh\cPanelWHM\Entity\Domain;
+use Daothanh\cPanelWHM\Entity\DomainUser;
+use Daothanh\cPanelWHM\Entity\SuspendedAccount;
+use Daothanh\cPanelWHM\Exceptions\ClientExceptions;
+use Daothanh\cPanelWHM\WHMClient;
 
 /**
  * Class Accounts
  *
- * @package PreviewTechs\cPanelWHM\WHM
+ * @package Daothanh\cPanelWHM\WHM
  */
 class Accounts
 {
@@ -53,7 +53,7 @@ class Accounts
      *       $accounts->searchAccounts($keyword, $searchType, $options);
      *   } catch (\Http\Client\Exception $e) {
      *       echo $e->getMessage();
-     *   } catch (\PreviewTechs\cPanelWHM\Exceptions\ClientExceptions $e) {
+     *   } catch (\Daothanh\cPanelWHM\Exceptions\ClientExceptions $e) {
      *       echo $e->getMessage();
      *   }
      *

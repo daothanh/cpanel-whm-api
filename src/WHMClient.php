@@ -1,11 +1,11 @@
 <?php
 
-namespace PreviewTechs\cPanelWHM;
+namespace Daothanh\cPanelWHM;
 
 use GuzzleHttp\Psr7\Request;
-use Http\Adapter\Guzzle6\Client;
+use Http\Adapter\Guzzle7\Client;
 use Http\Client\HttpClient;
-use PreviewTechs\cPanelWHM\Exceptions\ClientExceptions;
+use Daothanh\cPanelWHM\Exceptions\ClientExceptions;
 
 class WHMClient
 {
